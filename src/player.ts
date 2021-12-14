@@ -30,7 +30,7 @@ export class Player {
         if (brain != null) {
             this.brain = brain;
         } else {
-            this.brain = new NN(4, 8, 2);
+            this.brain = new NN(4, 4, 2);
         }
     }
 

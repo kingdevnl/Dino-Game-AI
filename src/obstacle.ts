@@ -22,7 +22,7 @@ export class Obstacle {
 
     update() {
         if (this.isOutOfBounds()) {
-            this.x = width + this.width;
+            this.x = width + this.width + Math.random() * 1.5;
         }
         this.x -= 2.5;
     }

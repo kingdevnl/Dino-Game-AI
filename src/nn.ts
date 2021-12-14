@@ -6,11 +6,11 @@ export class NN {
     num_hidden_nodes: number;
     num_output_nodes: number;
 
-    weights_ih: Matrix;
-    weights_ho: Matrix;
+    weights_ih: any;
+    weights_ho: any;
 
-    bias_h: Matrix;
-    bias_o: Matrix;
+    bias_h: any;
+    bias_o: any;
 
     constructor(
         num_input_nodes: number,
@@ -31,6 +31,7 @@ export class NN {
             -1.0,
             1.0,
         );
+
         this.bias_h = math.random([num_hidden_nodes, 1], -1.0, 1);
         this.bias_o = math.random([num_output_nodes, 1], -1.0, 1);
     }
